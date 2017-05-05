@@ -1,0 +1,10 @@
+<beans>  
+  
+    <bean id="car" class="com.deciphering.carImplementation.BMWCar" >  
+    </bean>  
+      
+    <bean id="human" class="com.deciphering.human.Human" >  
+        <property name = "car" bean = "car"></property>  
+    </bean>         
+      
+</beans>  
