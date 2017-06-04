@@ -24,5 +24,11 @@ class Test2 {
 		StringBuffer sb = new StringBuffer("hello");
 		sb.delete(0, 1);
 		System.out.println(sb.replace(0, 0, "i"));
+		
+		String bowlingCode = "X|X|X|X|X|X|X|X|X|X||XX";
+		bowlingCode=bowlingCode.replace("|", "%").replaceAll("%%", ",").replace("%",",");
+		System.out.println(bowlingCode);
+		
+		
 	}
 }
