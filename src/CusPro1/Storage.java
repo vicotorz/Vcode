@@ -3,6 +3,7 @@ package CusPro1;
 import java.util.LinkedList;
 
 /**
+ * LinkedList实现
  * 仓库类Storage实现缓冲区
  * 
  * Email:530025983@qq.com

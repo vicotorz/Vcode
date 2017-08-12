@@ -1,10 +1,12 @@
 package dongtaiguihua;
 
 /***
- * [1,4,2,5,3],5
- * */
+ * 最长递增子序列 ，可以不连续
+ * 
+ * 5 [1,4,2,5,3]
+ */
 public class LongestIncreasingSubsequence {
-	public int getLIS(int[] A, int n) {
+	public static int getLIS(int[] A, int n) {
 		// write code here
 		if (null == A || 0 >= n)
 			return 0;
@@ -19,6 +21,17 @@ public class LongestIncreasingSubsequence {
 			dp[i] = max + 1;
 			res = Math.max(res, dp[i]);
 		}
+		for(int e:dp){
+			System.out.print(e+",");
+		}
 		return res;
 	}
+
+	public static void main(String[] args) {
+		int[] A = { 1, 4, 2, 5, 3 };
+		int n = 5;
+		System.out.println(getLIS(A, n));
+
+	}
+
 }

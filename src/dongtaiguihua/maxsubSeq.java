@@ -1,5 +1,10 @@
 package dongtaiguihua;
 
+/**
+ * 最长公共子序列
+ * 
+ */
+
 public class maxsubSeq {
 	public static void main(String[] args) {
 		String A = "zynnqufc";

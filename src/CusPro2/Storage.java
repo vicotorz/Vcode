@@ -3,6 +3,7 @@ package CusPro2;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
+ * 利用LinkedBlockingQueue实现
  * 仓库类Storage实现缓冲区
  * 
  * Email:530025983@qq.com
