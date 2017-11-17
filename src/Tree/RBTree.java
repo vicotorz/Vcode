@@ -1,4 +1,4 @@
-package treedemo;
+package Tree;
 
 /**
  * Java 语言: 红黑树

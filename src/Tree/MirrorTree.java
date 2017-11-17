@@ -1,8 +1,8 @@
-package treedemo;
+package Tree;
 
 import java.util.Stack;
 
-import treedemo.reBuildTree.TreeNode;
+import Tree.reBuildTree.TreeNode;
 
 /**
  * 8 / \ 6 10 / \ / \ 5 7 9 11 镜像二叉树 8 / \ 10 6 / \ / \ 11 9 7 5

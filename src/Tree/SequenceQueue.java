@@ -1,4 +1,4 @@
-package treedemo;
+package Tree;
 import java.util.Arrays;
 
 public class SequenceQueue {

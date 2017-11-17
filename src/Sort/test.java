@@ -427,57 +427,31 @@ public class test {
 	 */
 
 	private void qsort_asc(int data[], int low, int high) {
-
 		int i, j, x;
-
 		if (low < high) { // 这个条件用来结束递归
-
 			i = low;
-
 			j = high;
-
 			x = data[i];
-
 			while (i < j) {
-
 				while (i < j && data[j] > x) {
-
 					j--; // 从右向左找第一个小于x的数
-
 				}
-
 				if (i < j) {
-
 					data[i] = data[j];
-
 					i++;
-
 				}
-
 				while (i < j && data[i] < x) {
-
 					i++; // 从左向右找第一个大于x的数
-
 				}
-
 				if (i < j) {
-
 					data[j] = data[i];
-
 					j--;
-
 				}
-
 			}
-
 			data[i] = x;
-
 			qsort_asc(data, low, i - 1);
-
 			qsort_asc(data, i + 1, high);
-
 		}
-
 	}
 
 	/**
@@ -566,14 +540,14 @@ public class test {
 
 	public int binarySearch(int[] dataset, int data, int beginIndex,
 
-	int endIndex) {
+			int endIndex) {
 
 		int midIndex = (beginIndex + endIndex) >>> 1; // 相当于mid = (low + high)
 														// / 2，但是效率会高些
 
 		if (data < dataset[beginIndex] || data > dataset[endIndex]
 
-		|| beginIndex > endIndex)
+				|| beginIndex > endIndex)
 
 			return -1;
 
@@ -617,7 +591,7 @@ public class test {
 
 		if (data < dataset[beginIndex] || data > dataset[endIndex]
 
-		|| beginIndex > endIndex)
+				|| beginIndex > endIndex)
 
 			return -1;
 
@@ -758,7 +732,7 @@ public class test {
 
 		System.out.println("您要找的数在第" + sortTest.binarySearch(array, 74)
 
-		+ "个位子。（下标从0计算）");
+				+ "个位子。（下标从0计算）");
 
 		// ==============推排序=============================
 		System.out.println("添加部分");
@@ -767,7 +741,6 @@ public class test {
 		for (int x = 0; x < num.length - 1; x++) {
 			System.out.print(num[x + 1] + " ");
 		}
-
 
 		// 简单选择排序
 
@@ -781,8 +754,6 @@ public class test {
 		 * a[i]=temp; } for(int i=0;i<a.length;i++) System.out.println(a[i]); }
 		 * }
 		 */
-
-	
 
 	}
 

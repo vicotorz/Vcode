@@ -1,4 +1,4 @@
-package treedemo;
+package Tree;
 import java.util.ArrayList;
 
 public class treemodel {

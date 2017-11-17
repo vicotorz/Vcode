@@ -8,7 +8,7 @@ package dongtaiguihua;
 public class maxsubSeq {
 	public static void main(String[] args) {
 		String A = "zynnqufc";
-		String B = "ddbauhkw";
+		String B = "zn";
 		System.out.println(new maxsubSeq().findLCS(A, 8, B, 8));
 	}
 

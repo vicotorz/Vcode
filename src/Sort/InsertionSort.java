@@ -3,8 +3,6 @@ package Sort;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import Sort.heapSort.ListNode;
-
 public class InsertionSort {
 	public int[] insertionSort(int[] A, int n) {
 		// write code here
@@ -34,10 +32,6 @@ public class InsertionSort {
 	public int[] divide(int[] A, int n) {
 		// write code here
 		// 利用迭代进行数组划分
-		// for (int e : A) {
-		// System.out.print(e + "##");
-		// }
-		// System.out.println();
 		int center = n / 2;
 		if (center > 0) {
 			// System.out.println("【center】" + center);

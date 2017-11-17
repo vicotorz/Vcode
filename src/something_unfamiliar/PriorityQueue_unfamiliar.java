@@ -12,7 +12,7 @@ public class PriorityQueue_unfamiliar {
 		queue.add(50);
 		queue.add(3);
 		for (int i = 0; i < 4; i++) {
-			System.out.print(queue.poll() + ",");
+			System.out.print(queue.peek() + ",");
 		}
 
 		Iterator<Integer> it = queue.iterator();
