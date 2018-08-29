@@ -7,7 +7,7 @@ public class test {
 		char c = 'A';
 		System.out.println(c < 'B');
 		System.out.println((a & b));
-		// x = (a & b) && (c < 'B');
+		//// x = (a & b) && (c < 'B');
 		// System.out.println(x);
 	}
 }
