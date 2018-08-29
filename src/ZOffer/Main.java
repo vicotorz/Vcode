@@ -1,4 +1,4 @@
-package practice;
+package ZOffer;
 
 import java.util.Scanner;
 
