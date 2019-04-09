@@ -3,7 +3,7 @@ package huawei;
 import java.util.Scanner;
 
 public class Main2 {
-
+//https://www.nowcoder.com/questionTerminal/0a92c75f5d6b4db28fcfa3e65e5c9b3f
 	/**
 	 * 检验两个手牌的大小 赋值 级别 牌数 对王 10 2 炸弹（4个一样） 一个数 4 同顺子（12345） 5牌 最小数 5 三个 3牌 一个数 3
 	 * 对子 一个数 2 个子 一个数 1
