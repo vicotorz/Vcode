@@ -2,7 +2,7 @@ package CuBao;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//https://www.nowcoder.com/questionTerminal/1226174194cf4b6ab52605f9e5b1ca78
 //光棍指数--区间中1最多，且最小的数
 public class Main {
 	public static int fun(int low, int high) {

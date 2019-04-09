@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main3 {
-
+//https://www.nowcoder.com/questionTerminal/646a6ad577f64e1cb84a33f650e41ef5
 	// 某个数称为无倍数数当且仅当其他的数都不是它的倍数
 	public void fun(BigDecimal[] num) {
 		Arrays.sort(num, new MyComprator());

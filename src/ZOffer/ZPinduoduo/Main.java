@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
+	//https://www.nowcoder.com/questionTerminal/dc49df3bbc0146dd92322889d40afcb1
 	public static int[] visited;
 	public static int[] bearNum;
 

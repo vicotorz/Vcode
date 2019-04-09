@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-
+//https://www.nowcoder.com/questionTerminal/2493f77ad22d4c20a7e53085950bfeca
 public class Main3 {
 	public static Map GoodMap;
 	public static List<List> Activity;
