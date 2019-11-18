@@ -42,6 +42,14 @@ public class dijkstra {
 		System.out.println();
 
 		System.out.println("起点:" + start + "终点:" + end);
+	    
+	    //需要的变量：
+            //isLabel是否被标号
+            //indexs 标号下标集合
+            //i_count 为栈的顶点
+            //distance 从V0到各个节点的路径长度
+            //path 路径
+            // 所有标号的点的下标集合，以标号的先后顺序进行存储，实际上是一个以数组表示的栈
 		boolean[] isLabel = new boolean[W1[0].length];// 是否标号
 		int[] indexs = new int[W1[0].length];// 所有标号的点的下标集合，以标号的先后顺序进行存储，实际上是一个以数组表示的栈
 		int i_count = -1;// 栈的顶点
@@ -53,11 +61,13 @@ public class dijkstra {
 		isLabel[index] = true;
 
 		while (i_count < W1[0].length) {
-			// 第一步：得到与原点最近的某个点
+		// 第一步：得到与原点最近的某个点，即：distance[start][i]
+                // 先遍历节点，如果没有被访问且与起点有路径，则看一下是不是路径最小
+                // indexs记录这个节点V
 			int min = Integer.MAX_VALUE;
 			for (int i = 0; i < distance.length; i++) {
 				if (!isLabel[i] && distance[start][i] != -1 && i != index) {// 如果这个点没被标号
-					// ，有路径，而且不是起点本身
+					// 有路径，而且不是起点本身
 					// 如果到这个点有边,并且没有被标号
 					if (distance[start][i] < min) {
 						min = distance[start][i];
@@ -81,7 +91,9 @@ public class dijkstra {
 				presentShortest += W1[indexs[i_count - 1]][index];
 			}
 
-			// 第二步：加入vi后，重新计算distance中的距离(加入了新的点，会让起点到其他点距离最短的话)
+ 		// 第二步：加入节点V后，重新计算distance中的距离
+                //遍历节点：（1）如果V到节点Vi有路径，且start到Vi没有路径，则distance[start][i] = presentShortest + graph[index][i];
+                //（2）或者加入V节点以后，使得 start到i节点路径变的更小，也要更新
 			for (int i = 0; i < distance.length; i++) {
 
 				// 如果vi到那个点有边，则v0到后面点的距离加
